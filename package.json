@@ -1,6 +1,6 @@
 {
-  "name": "react-sortable-tree-theme-bms",
-  "version": "1.0.11",
+  "name": "bms-theme-react-sortable-tree",
+  "version": "1.0.0",
   "description": "BMS theme for react-sortable-tree",
   "scripts": {
     "build": "npm run clean && cross-env NODE_ENV=production TARGET=umd webpack --bail",
@@ -19,14 +19,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/billes/react-sortable-tree-theme-bms.git"
+    "url": "git+https://github.com/iamparnab/react-sortable-tree-theme-bms.git"
   },
-  "author": "Nathanael Björkgård",
+  "author": "Parnab Sanyal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/billes/react-sortable-tree-theme-bms/issues"
+    "url": "https://github.com/iamparnab/react-sortable-tree-theme-bms/issues"
   },
-  "homepage": "https://github.com/billes/react-sortable-tree-theme-bms#readme",
+  "homepage": "https://github.com/iamparnab/react-sortable-tree-theme-bms#readme",
   "jest": {
     "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
     "moduleFileExtensions": [
