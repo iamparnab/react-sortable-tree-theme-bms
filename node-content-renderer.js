@@ -116,6 +116,8 @@ class FileThemeNodeContentRenderer extends Component {
               <NavigateExpand
                 viewBox="0 0 14 14"
                 style={{
+                  width: '14px',
+                  height: '14px',
                   position: 'absolute',
                   top: '-4px',
                   left: '4px'
