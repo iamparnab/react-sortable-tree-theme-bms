@@ -114,21 +114,21 @@ class FileThemeNodeContentRenderer extends Component {
             >
             {node.expanded ? (
               <NavigateExpand
-                viewBox="3 2 18 18"
+                viewBox="0 0 14 14"
                 style={{
-                  width: '12px',
-                  height: '12px',
+                  width: '14px',
+                  height: '14px',
                   position: 'absolute',
                   top: '2px',
-                  left: '2px'
+                  left: '5px'
                 }}
               />
             ) : (
               <NavigateCollapse
                 viewBox="0 0 14 14"
                 style={{
-                  width: '12px',
-                  height: '12px',
+                  width: '14px',
+                  height: '14px',
                   position: 'absolute',
                   top: '2px',
                   left: '2px'

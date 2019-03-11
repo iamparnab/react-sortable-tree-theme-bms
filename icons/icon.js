@@ -8,7 +8,6 @@ const Icon = ({
 }) => (
     <svg
       className="expand_button"
-      fill="rgba(0,0,0,0.57)"
       style={{
         width: 20,
         height: 20,
