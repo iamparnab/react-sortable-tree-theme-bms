@@ -125,7 +125,7 @@ class FileThemeNodeContentRenderer extends Component {
               />
             ) : (
               <NavigateCollapse
-                viewBox="3 2 18 18"
+                viewBox="0 0 14 14"
                 style={{
                   width: '12px',
                   height: '12px',

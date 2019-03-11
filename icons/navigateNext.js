@@ -4,7 +4,7 @@ import Icon from './icon'
 
 const NavigateNext = ({ viewBox, style }) => (
     <Icon viewBox={viewBox} style={style} className="expand_button">
-      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" className="expand_button" />
+      <path fill="none" fill-rule="evenodd" stroke="#5A5A5A" d="M4 1l6 6.02L4.04 13"/>
       <path d="M0 0h24v24H0z" fill="none" />
     </Icon>
   )
