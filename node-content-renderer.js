@@ -158,6 +158,16 @@ class FileThemeNodeContentRenderer extends Component {
           {connectDragPreview(
             <div style={{ display: 'flex', height: '100%' }}>
               {scaffold}
+              <div className={styles.rowToolbar}>
+                {buttons.map((btn, index) => (
+                  <div
+                    key={index} // eslint-disable-line react/no-array-index-key
+                    className={styles.toolbarButton}
+                  >
+                    {btn}
+                  </div>
+                ))}
+              </div>
               <div
                 className={
                   styles.row +

@@ -1,6 +1,6 @@
 {
   "name": "bms-theme-react-sortable-tree",
-  "version": "1.0.7",
+  "version": "1.0.11",
   "description": "BMS theme for react-sortable-tree",
   "scripts": {
     "build": "npm run clean && cross-env NODE_ENV=production TARGET=umd webpack --bail",
@@ -10,7 +10,6 @@
     "start": "cross-env NODE_ENV=development TARGET=development webpack-dev-server --inline --hot",
     "lint": "eslint .",
     "prettier": "prettier --single-quote --no-semi --trailing-comma es5 --write \"**/*.{js,jsx,css,scss}\"",
-    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "test": "jest"
   },
   "main": "dist/main.js",
