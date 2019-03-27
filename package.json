@@ -1,6 +1,6 @@
 {
   "name": "bms-theme-react-sortable-tree",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "BMS theme for react-sortable-tree",
   "scripts": {
     "build": "npm run clean && cross-env NODE_ENV=production TARGET=umd webpack --bail",

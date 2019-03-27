@@ -135,7 +135,12 @@ class FileThemeNodeContentRenderer extends Component {
                   }}
                 />
               )}
-            <div className={styles.rowToolbar}>
+            <div className={styles.rowToolbar}
+              style={{
+                display: 'flex',
+                alignItems: 'center'
+              }}
+            >
               {buttons.map((btn, index) => (
                 <div
                   key={index} // eslint-disable-line react/no-array-index-key
