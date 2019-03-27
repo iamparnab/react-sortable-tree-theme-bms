@@ -95,23 +95,23 @@ class FileThemeNodeContentRenderer extends Component {
     const nodeContent = (
       <div style={{ height: '100%' }} {...otherProps}>
         {renderToggleButtonFlag && (
-            <button
-              type="button"
-              aria-label={node.expanded ? 'Collapse' : 'Expand'}
-              className={styles.button}
-              style={{
-                left: (lowerSiblingCounts.length - 0.8) * scaffoldBlockPxWidth,
-                top: 'unset',
-                bottom: -4
-              }}
-              onClick={() =>
-                toggleChildrenVisibility({
-                  node,
-                  path,
-                  treeIndex,
-                })
-              }
-            >
+          <button
+            type="button"
+            aria-label={node.expanded ? 'Collapse' : 'Expand'}
+            className={styles.button}
+            style={{
+              left: (lowerSiblingCounts.length - 0.8) * scaffoldBlockPxWidth,
+              top: 'unset',
+              bottom: -4
+            }}
+            onClick={() =>
+              toggleChildrenVisibility({
+                node,
+                path,
+                treeIndex,
+              })
+            }
+          >
             {node.expanded ? (
               <NavigateExpand
                 viewBox="0 0 14 14"
@@ -124,19 +124,29 @@ class FileThemeNodeContentRenderer extends Component {
                 }}
               />
             ) : (
-              <NavigateCollapse
-                viewBox="0 0 14 14"
-                style={{
-                  width: '14px',
-                  height: '14px',
-                  position: 'absolute',
-                  top: '-4px',
-                  left: '2px'
-                }}
-              />
-            )}
-            </button>
-          )}
+                <NavigateCollapse
+                  viewBox="0 0 14 14"
+                  style={{
+                    width: '14px',
+                    height: '14px',
+                    position: 'absolute',
+                    top: '-4px',
+                    left: '2px'
+                  }}
+                />
+              )}
+            <div className={styles.rowToolbar}>
+              {buttons.map((btn, index) => (
+                <div
+                  key={index} // eslint-disable-line react/no-array-index-key
+                  className={styles.toolbarButton}
+                >
+                  {btn}
+                </div>
+              ))}
+            </div>
+          </button>
+        )}
 
         <div
           className={
@@ -184,24 +194,15 @@ class FileThemeNodeContentRenderer extends Component {
                     <span className={styles.rowTitle}>
                       {typeof nodeTitle === 'function'
                         ? nodeTitle({
-                            node,
-                            path,
-                            treeIndex,
-                          })
+                          node,
+                          path,
+                          treeIndex,
+                        })
                         : nodeTitle}
                     </span>
                   </div>
 
-                  <div className={styles.rowToolbar}>
-                    {buttons.map((btn, index) => (
-                      <div
-                        key={index} // eslint-disable-line react/no-array-index-key
-                        className={styles.toolbarButton}
-                      >
-                        {btn}
-                      </div>
-                    ))}
-                  </div>
+
                 </div>
               </div>
             </div>
